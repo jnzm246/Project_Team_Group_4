@@ -18,7 +18,7 @@ COT_CLUSTER = ['log_Price', 'log_Qty', 'log_Pages', 'log_PricePerPage', 'Is_set'
 COT_REG = ['log_Qty', 'log_Pages', 'Is_set', 'Has_gift', 'Pages_missing']
 COT_CLF = ['log_Price', 'log_Pages', 'Is_set', 'Has_gift', 'Pages_missing']
 
-df = pd.read_csv('Data/fahasa_cleaned.csv')
+df = pd.read_csv('Data/fahasa_clustered.csv')
 for cot in ['Is_set', 'Has_gift', 'Pages_missing']:
     df[cot] = df[cot].astype(int)
 
